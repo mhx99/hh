@@ -59,8 +59,8 @@ let activityCookie =''
     return;
   }
   $.activityId = "dz2110100011246801"
-  $.shareUuid = "f3d8e58219a04952a3e9d521805fd8be"
-  console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/dz/openCard/activity?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
+  $.shareUuid = "dc338c706a8c4f8a822c29a04108df6c"
+  console.log(`入口:\nhttps://lzdz4-isv.isvjcloud.com/dingzhi/jdgehu/hudong/activity/9998905?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i];
     if (cookie) {
