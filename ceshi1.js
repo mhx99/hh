@@ -1,4 +1,4 @@
-*/
+
 let guaopencard_addSku = "false"
 let guaopencard = "false"
 let guaopenwait = "0"
