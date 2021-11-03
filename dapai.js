@@ -1,9 +1,7 @@
 /*
-大牌
-11.1 - 11.12
-https://lzdz4-isv.isvjcloud.com/dingzhi/jdfashion/conversion/activity/5774784?activityId=dz2110100000765301&shareUuid=459090f0f6654b16ad9f7437f372db97
+热爱
 */
-const $ = new Env("大牌");
+const $ = new Env("热爱");
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 let cookiesArr = [], cookie = '', message = '';
