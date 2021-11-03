@@ -2,12 +2,11 @@
 
 https://prodev.m.jd.com/mall/active/2VyRHGE7jM1igBJcrjoB6ak1JJWV/index.html
 
-
 如需加购请设置环境变量[guaunknownTask_addSku1]为"true"
 
 27 14 * 9 * https://raw.githubusercontent.com/smiek2221/scripts/master/gua_UnknownTask1.js
 */
-const $ = new Env('电脑配件');
+const $ = new Env('我爱520_电脑配件');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
 const notify = $.isNode() ? require('./sendNotify') : '';
@@ -110,9 +109,9 @@ async function run() {
 
 function indexInfo() {
   return new Promise(async resolve => {
-    let sign = getSign("/tzh/combination/indexInfo",{"activityId": 14})
+    let sign = getSign("/tzh/combination/indexInfo",{"activityId": 15})
     $.get({
-      url: `https://combination.m.jd.com/tzh/combination/indexInfo?activityId=14&t=${sign.timestamp}`,
+      url: `https://combination.m.jd.com/tzh/combination/indexInfo?activityId=15&t=${sign.timestamp}`,
       headers: {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type':'application/json;charset=utf-8',
@@ -158,10 +157,10 @@ function indexInfo() {
 function doTask(type, id, taskId) {
   if($.outFlag != 0) return
   return new Promise(async resolve => {
-    let sign = getSign(`/tzh/combination/${type}`,{"activityId": 14,"id":id,"taskId":taskId})
+    let sign = getSign(`/tzh/combination/${type}`,{"activityId": 15,"id":id,"taskId":taskId})
     $.post({
       url: `https://combination.m.jd.com/tzh/combination/${type}`,
-      body: `activityId=14&id=${id}&taskId=${taskId}&t=${sign.timestamp}`,
+      body: `activityId=15&id=${id}&taskId=${taskId}&t=${sign.timestamp}`,
       headers: {
         'Accept': 'application/json, text/plain, */*',
         "Accept-Language": "zh-cn",
@@ -215,10 +214,10 @@ function doTask(type, id, taskId) {
 function extraTaskPrize() {
   if($.outFlag != 0) return
   return new Promise(async resolve => {
-    let sign = getSign(`/tzh/combination/extraTaskPrize`,{"activityId": 14})
+    let sign = getSign(`/tzh/combination/extraTaskPrize`,{"activityId": 15})
     $.post({
       url: `https://combination.m.jd.com/tzh/combination/extraTaskPrize`,
-      body: `activityId=14&t=${sign.timestamp}`,
+      body: `activityId=15&t=${sign.timestamp}`,
       headers: {
         'Accept': 'application/json, text/plain, */*',
         "Accept-Language": "zh-cn",
